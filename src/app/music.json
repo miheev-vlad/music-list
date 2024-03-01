@@ -1,0 +1,118 @@
+{
+  "feed": {
+    "author": {
+      "name": { "label": "iTunes Store" },
+      "uri": { "label": "http://www.apple.com/uk/itunes/" }
+    },
+    "entry": {
+      "im:name": { "label": "Lose Control" },
+      "im:image": [
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/55x55bb.png",
+          "attributes": { "height": "55" }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/60x60bb.png",
+          "attributes": { "height": "60" }
+        },
+        {
+          "label": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/170x170bb.png",
+          "attributes": { "height": "170" }
+        }
+      ],
+      "im:collection": {
+        "im:name": { "label": "I've Tried Everything But Therapy (Part 1)" },
+        "link": {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://music.apple.com/gb/album/ive-tried-everything-but-therapy-part-1/1691699589?uo=2"
+          }
+        },
+        "im:contentType": {
+          "im:contentType": {
+            "attributes": { "term": "Album", "label": "Album" }
+          },
+          "attributes": { "term": "Music", "label": "Music" }
+        }
+      },
+      "im:price": {
+        "label": "£0.59",
+        "attributes": { "amount": "0.59", "currency": "GBP" }
+      },
+      "im:contentType": {
+        "im:contentType": {
+          "attributes": { "term": "Track", "label": "Track" }
+        },
+        "attributes": { "term": "Music", "label": "Music" }
+      },
+      "rights": {
+        "label": "℗ 2023 SWIMS Int. under exclusive license to Warner Records Inc."
+      },
+      "title": { "label": "Lose Control - Teddy Swims" },
+      "link": [
+        {
+          "attributes": {
+            "rel": "alternate",
+            "type": "text/html",
+            "href": "https://music.apple.com/gb/album/lose-control/1691699589?i=1691699836&uo=2"
+          }
+        },
+        {
+          "im:duration": { "label": "30000" },
+          "attributes": {
+            "title": "Preview",
+            "rel": "enclosure",
+            "type": "audio/x-m4a",
+            "href": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/73/df/40/73df40b0-997e-bff6-2738-bd22fcea788f/mzaf_4196872692233294773.plus.aac.p.m4a",
+            "im:assetType": "preview"
+          }
+        }
+      ],
+      "id": {
+        "label": "https://music.apple.com/gb/album/lose-control/1691699589?i=1691699836&uo=2",
+        "attributes": { "im:id": "1691699836" }
+      },
+      "im:artist": {
+        "label": "Teddy Swims",
+        "attributes": {
+          "href": "https://music.apple.com/gb/artist/teddy-swims/1462541757?uo=2"
+        }
+      },
+      "category": {
+        "attributes": {
+          "im:id": "14",
+          "term": "Pop",
+          "scheme": "https://music.apple.com/gb/genre/music-pop/id14?uo=2",
+          "label": "Pop"
+        }
+      },
+      "im:releaseDate": {
+        "label": "2023-06-23T05:00:00-07:00",
+        "attributes": { "label": "23 June 2023" }
+      }
+    },
+    "updated": { "label": "2024-02-29T16:03:08-07:00" },
+    "rights": { "label": "Copyright 2008 Apple Inc." },
+    "title": { "label": "iTunes Store: Top Songs" },
+    "icon": { "label": "http://itunes.apple.com/favicon.ico" },
+    "link": [
+      {
+        "attributes": {
+          "rel": "alternate",
+          "type": "text/html",
+          "href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=gb&id=130&popId=1"
+        }
+      },
+      {
+        "attributes": {
+          "rel": "self",
+          "href": "https://mzstoreservices-int.itunes.apple.com/gb/rss/topsongs/limit=1/json"
+        }
+      }
+    ],
+    "id": {
+      "label": "https://mzstoreservices-int.itunes.apple.com/gb/rss/topsongs/limit=1/json"
+    }
+  }
+}

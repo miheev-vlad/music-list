@@ -1,0 +1,39 @@
+<div class="music-player" *ngIf="musicIndex">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="prev()" [disabled]="trackPointer === 0">
+        <mat-icon>skip_previous</mat-icon>
+      </button>
+      <button mat-icon-button (click)="audio.paused ? play() : stop()">
+        <mat-icon>{{ audio.paused ? "play_arrow" : "pause" }}</mat-icon>
+      </button>
+      <button
+        mat-icon-button
+        (click)="next()"
+        [disabled]="trackPointer === musicLimit - 1"
+      >
+        <mat-icon>skip_next</mat-icon>
+      </button>
+      <button mat-icon-button (click)="off()" [disabled]="volumeLevel === 0">
+        <mat-icon
+          >{{
+            volumeLevel === 0 ? "volume_off" : "volume_up"
+          }}volume_up</mat-icon
+        >
+      </button>
+
+      <mat-slider color="primary" step="1" min="0" [max]="volumeLevelMax">
+        <input
+          matSliderThumb
+          #volumeSlider
+          [(ngModel)]="volumeLevel"
+          (change)="onChangeVolumeSlider(volumeSlider.value)"
+        />
+      </mat-slider>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <span>{{ musicPlayerService.currentMusic.title }}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>

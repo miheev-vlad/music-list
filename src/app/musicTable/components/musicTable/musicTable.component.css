@@ -1,0 +1,14 @@
+.music-list {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.music-table {
+  width: 100%;
+}
+
+.mat-mdc-row:hover {
+  color: white;
+  background-color: gray;
+  opacity: 0.8;
+}
