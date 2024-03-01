@@ -4,7 +4,7 @@
       <button mat-icon-button (click)="prev()" [disabled]="trackPointer === 0">
         <mat-icon>skip_previous</mat-icon>
       </button>
-      <button mat-icon-button (click)="audio.paused ? play() : stop()">
+      <button mat-icon-button (click)="audio.paused ? unStop() : stop()">
         <mat-icon>{{ audio.paused ? "play_arrow" : "pause" }}</mat-icon>
       </button>
       <button

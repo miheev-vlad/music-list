@@ -28,30 +28,20 @@ export class MusicPlayerComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['musicIndex'].currentValue) {
-      this.musicPlayerService.currentMusic =
-        this.musicPlayerService.musicList.find(
-          (music) => music.id === changes['musicIndex'].currentValue
-        )!;
       this.play();
     }
   }
 
   play(): void {
-    if (this.audio.paused) {
-      if (this.audio.readyState === 0) {
-        this.trackPointer = 0;
-        this.musicPlayerService.currentMusic =
-          this.musicPlayerService.musicList[0];
-        this.audio.src = this.musicPlayerService.currentMusic.url;
-      }
-      this.audio.play();
-    } else {
-      this.trackPointer = this.musicPlayerService.musicList.indexOf(
-        this.musicPlayerService.currentMusic
-      );
-      this.audio.src = this.musicPlayerService.currentMusic.url;
-      this.audio.play();
-    }
+    this.musicPlayerService.currentMusic =
+      this.musicPlayerService.musicList.find(
+        (music) => music.id === this.musicIndex
+      )!;
+    this.trackPointer = this.musicPlayerService.musicList.indexOf(
+      this.musicPlayerService.currentMusic
+    );
+    this.audio.src = this.musicPlayerService.currentMusic.url;
+    this.audio.play();
   }
 
   prev(): void {
@@ -76,6 +66,10 @@ export class MusicPlayerComponent implements OnChanges {
 
   stop() {
     this.audio.pause();
+  }
+
+  unStop() {
+    this.audio.play();
   }
 
   off() {
